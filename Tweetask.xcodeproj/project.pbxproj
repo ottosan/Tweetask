@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37AB3F682A43EC8F965CAA5E /* Pods_Tweetask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDD54744F0877554C83A33D /* Pods_Tweetask.framework */; };
 		C4C1575F1E5414A20098DA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C1575E1E5414A20098DA8D /* AppDelegate.swift */; };
 		C4C157611E5414A20098DA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C157601E5414A20098DA8D /* ViewController.swift */; };
 		C4C157641E5414A20098DA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C157621E5414A20098DA8D /* Main.storyboard */; };
 		C4C157661E5414A20098DA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C157651E5414A20098DA8D /* Assets.xcassets */; };
 		C4C157691E5414A20098DA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C157671E5414A20098DA8D /* LaunchScreen.storyboard */; };
+		C4C651CB1E541C97006A028D /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C651CA1E541C97006A028D /* RAMBounceAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39B8F2110A71576B1D5031A7 /* Pods-Tweetask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetask.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tweetask/Pods-Tweetask.release.xcconfig"; sourceTree = "<group>"; };
+		3CDD54744F0877554C83A33D /* Pods_Tweetask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweetask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E0C85AD13CEB4B7EEA12EF /* Pods-Tweetask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tweetask/Pods-Tweetask.debug.xcconfig"; sourceTree = "<group>"; };
 		C4C1575B1E5414A20098DA8D /* Tweetask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweetask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C1575E1E5414A20098DA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C157601E5414A20098DA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C4C157651E5414A20098DA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4C157681E5414A20098DA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4C1576A1E5414A20098DA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C651CA1E541C97006A028D /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBounceAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37AB3F682A43EC8F965CAA5E /* Pods_Tweetask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5176714729D316CB140F0ABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65E0C85AD13CEB4B7EEA12EF /* Pods-Tweetask.debug.xcconfig */,
+				39B8F2110A71576B1D5031A7 /* Pods-Tweetask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4C157521E5414A10098DA8D = {
 			isa = PBXGroup;
 			children = (
 				C4C1575D1E5414A20098DA8D /* Tweetask */,
 				C4C1575C1E5414A20098DA8D /* Products */,
+				5176714729D316CB140F0ABC /* Pods */,
+				FDF02795E82B98C6348D37F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				C4C1575E1E5414A20098DA8D /* AppDelegate.swift */,
+				C4C651CA1E541C97006A028D /* RAMBounceAnimation.swift */,
 				C4C157601E5414A20098DA8D /* ViewController.swift */,
 				C4C157621E5414A20098DA8D /* Main.storyboard */,
 				C4C157651E5414A20098DA8D /* Assets.xcassets */,
@@ -64,6 +83,14 @@
 			path = Tweetask;
 			sourceTree = "<group>";
 		};
+		FDF02795E82B98C6348D37F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CDD54744F0877554C83A33D /* Pods_Tweetask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4C1576D1E5414A20098DA8D /* Build configuration list for PBXNativeTarget "Tweetask" */;
 			buildPhases = (
+				4F7C0796BEAA100D91BADFEA /* [CP] Check Pods Manifest.lock */,
 				C4C157571E5414A20098DA8D /* Sources */,
 				C4C157581E5414A20098DA8D /* Frameworks */,
 				C4C157591E5414A20098DA8D /* Resources */,
+				C06CC80614CB24B60552D7DA /* [CP] Embed Pods Frameworks */,
+				9892368C2B570EFC6D773A0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +162,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F7C0796BEAA100D91BADFEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9892368C2B570EFC6D773A0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tweetask/Pods-Tweetask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06CC80614CB24B60552D7DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tweetask/Pods-Tweetask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4C157571E5414A20098DA8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C651CB1E541C97006A028D /* RAMBounceAnimation.swift in Sources */,
 				C4C157611E5414A20098DA8D /* ViewController.swift in Sources */,
 				C4C1575F1E5414A20098DA8D /* AppDelegate.swift in Sources */,
 			);
@@ -257,6 +336,7 @@
 		};
 		C4C1576E1E5414A20098DA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E0C85AD13CEB4B7EEA12EF /* Pods-Tweetask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GJE3TAUUTA;
@@ -270,6 +350,7 @@
 		};
 		C4C1576F1E5414A20098DA8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B8F2110A71576B1D5031A7 /* Pods-Tweetask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GJE3TAUUTA;
@@ -300,6 +381,7 @@
 				C4C1576F1E5414A20098DA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

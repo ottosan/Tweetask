@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O2n-2J-q4a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--設定-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,209 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twitterアカウント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lm-TI-e4f">
+                                <rect key="frame" x="24" y="20" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wz-9G-JMI">
+                                <rect key="frame" x="203" y="66" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="変更"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP2-FE-ULf">
+                                <rect key="frame" x="274" y="66" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ログアウト"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bf-pZ-pbi">
+                                <rect key="frame" x="30" y="71" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb4-6g-YLr">
+                                <rect key="frame" x="136" y="66" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="追加"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="setting" selectedImage="setting" id="jpH-KH-i3P" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="5Xl-gD-0aN" id="mIS-wz-A9k"/>
+                        </connections>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="5Xl-gD-0aN" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController"/>
             </objects>
+            <point key="canvasLocation" x="1178" y="602"/>
+        </scene>
+        <!--追加-->
+        <scene sceneID="3xa-Xd-kgw">
+            <objects>
+                <viewController id="fOh-c7-LJT" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zzZ-5V-ytP"/>
+                        <viewControllerLayoutGuide type="bottom" id="hgP-lp-T5T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DIJ-m7-Ig0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4im-vh-wff">
+                                <rect key="frame" x="26" y="20" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JuU-Wf-yti">
+                                <rect key="frame" x="26" y="51" width="333" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rMN-0Q-ACR">
+                                <rect key="frame" x="26" y="132" width="333" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="fEh-vl-xXp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJf-IK-8Wd">
+                                <rect key="frame" x="26" y="101" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRH-Lh-SqI">
+                                <rect key="frame" x="310" y="302" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHH-x0-rwh">
+                                <rect key="frame" x="26" y="302" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-He-G7e">
+                                <rect key="frame" x="0.0" y="363" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="509169868.72158802">
+                                    <!--2017-02-19 04:04:28 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79X-ke-fqI">
+                                <rect key="frame" x="328" y="584" width="31" height="30"/>
+                                <state key="normal" title="完了"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvg-Te-Wjl">
+                                <rect key="frame" x="16" y="584" width="77" height="30"/>
+                                <state key="normal" title="キャンセル"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JuU-Wf-yti" firstAttribute="top" secondItem="4im-vh-wff" secondAttribute="bottom" constant="10" id="3gC-cS-5ws"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="79X-ke-fqI" secondAttribute="trailing" id="4FZ-Bx-6Jq"/>
+                            <constraint firstItem="nHH-x0-rwh" firstAttribute="leading" secondItem="DIJ-m7-Ig0" secondAttribute="leadingMargin" constant="10" id="5eh-cq-INK"/>
+                            <constraint firstItem="TRH-Lh-SqI" firstAttribute="top" secondItem="rMN-0Q-ACR" secondAttribute="bottom" constant="20" id="6pP-sG-kFb"/>
+                            <constraint firstItem="4im-vh-wff" firstAttribute="leading" secondItem="DIJ-m7-Ig0" secondAttribute="leadingMargin" constant="10" id="76N-s6-hP8"/>
+                            <constraint firstItem="hJf-IK-8Wd" firstAttribute="leading" secondItem="DIJ-m7-Ig0" secondAttribute="leadingMargin" constant="10" id="9nC-2n-iUl"/>
+                            <constraint firstItem="JuU-Wf-yti" firstAttribute="leading" secondItem="DIJ-m7-Ig0" secondAttribute="leadingMargin" constant="10" id="Ad7-OQ-a1F"/>
+                            <constraint firstItem="i3q-He-G7e" firstAttribute="top" secondItem="TRH-Lh-SqI" secondAttribute="bottom" constant="30" id="Ch2-dU-Pne"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TRH-Lh-SqI" secondAttribute="trailing" id="DgB-LL-Xxj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rMN-0Q-ACR" secondAttribute="trailing" id="Fff-Pn-Hnc"/>
+                            <constraint firstItem="4im-vh-wff" firstAttribute="top" secondItem="zzZ-5V-ytP" secondAttribute="bottom" id="GHA-X7-eWk"/>
+                            <constraint firstItem="rMN-0Q-ACR" firstAttribute="leading" secondItem="DIJ-m7-Ig0" secondAttribute="leadingMargin" constant="10" id="KF9-A9-IUt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JuU-Wf-yti" secondAttribute="trailing" id="RSm-Xn-01f"/>
+                            <constraint firstItem="hJf-IK-8Wd" firstAttribute="top" secondItem="JuU-Wf-yti" secondAttribute="bottom" constant="20" id="fwk-Go-J7v"/>
+                            <constraint firstItem="79X-ke-fqI" firstAttribute="top" secondItem="i3q-He-G7e" secondAttribute="bottom" constant="5" id="jgv-er-kwd"/>
+                            <constraint firstAttribute="trailing" secondItem="i3q-He-G7e" secondAttribute="trailing" id="rBr-jb-wHE"/>
+                            <constraint firstItem="rMN-0Q-ACR" firstAttribute="top" secondItem="hJf-IK-8Wd" secondAttribute="bottom" constant="10" id="rGm-wt-6kl"/>
+                            <constraint firstItem="nHH-x0-rwh" firstAttribute="top" secondItem="rMN-0Q-ACR" secondAttribute="bottom" constant="20" id="rnB-fh-3dA"/>
+                            <constraint firstItem="rvg-Te-Wjl" firstAttribute="top" secondItem="i3q-He-G7e" secondAttribute="bottom" constant="5" id="sP6-Ma-VwG"/>
+                            <constraint firstItem="rvg-Te-Wjl" firstAttribute="leading" secondItem="DIJ-m7-Ig0" secondAttribute="leadingMargin" id="uu8-sz-ftv"/>
+                            <constraint firstItem="i3q-He-G7e" firstAttribute="leading" secondItem="DIJ-m7-Ig0" secondAttribute="leading" id="y5x-9E-h87"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="追加" image="add" selectedImage="add" id="mhD-XZ-U5z" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="vSp-5z-Erj" id="46n-L3-Z2V"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrD-fX-a9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="vSp-5z-Erj" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="397.60000000000002" y="602.24887556221893"/>
+        </scene>
+        <!--リスト-->
+        <scene sceneID="d8G-dQ-E8I">
+            <objects>
+                <viewController id="rPC-cd-fGC" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R0a-cg-tP6"/>
+                        <viewControllerLayoutGuide type="bottom" id="HmI-mI-dxj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KbY-wh-9Sh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FH0-hW-tPy">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FH0-hW-tPy" firstAttribute="top" secondItem="R0a-cg-tP6" secondAttribute="bottom" id="E5Y-ur-XY6"/>
+                            <constraint firstItem="HmI-mI-dxj" firstAttribute="top" secondItem="FH0-hW-tPy" secondAttribute="bottom" id="Gu1-1s-VHE"/>
+                            <constraint firstItem="FH0-hW-tPy" firstAttribute="leading" secondItem="KbY-wh-9Sh" secondAttribute="leadingMargin" id="mlu-S3-IEu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FH0-hW-tPy" secondAttribute="trailing" id="vQp-rP-YGZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="リスト" image="list" selectedImage="list" id="Zp6-Yn-ktL" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="2Fm-Xi-N0V" id="FgC-Yl-Cd5"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sE8-ub-pEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="2Fm-Xi-N0V" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="602"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="ZMo-O1-roM">
+            <objects>
+                <tabBarController id="O2n-2J-q4a" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4Ph-Un-Hc0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rPC-cd-fGC" kind="relationship" relationship="viewControllers" id="Cvc-XE-qMb"/>
+                        <segue destination="fOh-c7-LJT" kind="relationship" relationship="viewControllers" id="Bg4-sn-hIL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="5UY-Yt-RaC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkm-ec-Gnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="-252"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="14" height="15"/>
+        <image name="list" width="15" height="15"/>
+        <image name="setting" width="15" height="15"/>
+    </resources>
 </document>
