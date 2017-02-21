@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		37AB3F682A43EC8F965CAA5E /* Pods_Tweetask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDD54744F0877554C83A33D /* Pods_Tweetask.framework */; };
+		C445E4D61E5C29F100795338 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C445E4D51E5C29F100795338 /* GoogleService-Info.plist */; };
+		C445E4D81E5C2CA300795338 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445E4D71E5C2CA300795338 /* LoginViewController.swift */; };
+		C47AD0601E5B251200D57777 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD05F1E5B251200D57777 /* ListViewController.swift */; };
+		C47AD0621E5B252F00D57777 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD0611E5B252F00D57777 /* AddViewController.swift */; };
+		C47AD0641E5B254A00D57777 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD0631E5B254A00D57777 /* SettingViewController.swift */; };
+		C47AD0661E5B2B6400D57777 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD0651E5B2B6400D57777 /* Task.swift */; };
 		C4C1575F1E5414A20098DA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C1575E1E5414A20098DA8D /* AppDelegate.swift */; };
 		C4C157611E5414A20098DA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C157601E5414A20098DA8D /* ViewController.swift */; };
 		C4C157641E5414A20098DA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C157621E5414A20098DA8D /* Main.storyboard */; };
@@ -20,6 +26,12 @@
 		39B8F2110A71576B1D5031A7 /* Pods-Tweetask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetask.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tweetask/Pods-Tweetask.release.xcconfig"; sourceTree = "<group>"; };
 		3CDD54744F0877554C83A33D /* Pods_Tweetask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweetask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E0C85AD13CEB4B7EEA12EF /* Pods-Tweetask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tweetask/Pods-Tweetask.debug.xcconfig"; sourceTree = "<group>"; };
+		C445E4D51E5C29F100795338 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C445E4D71E5C2CA300795338 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C47AD05F1E5B251200D57777 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C47AD0611E5B252F00D57777 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		C47AD0631E5B254A00D57777 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C47AD0651E5B2B6400D57777 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C4C1575B1E5414A20098DA8D /* Tweetask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweetask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C1575E1E5414A20098DA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C157601E5414A20098DA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,12 +84,18 @@
 		C4C1575D1E5414A20098DA8D /* Tweetask */ = {
 			isa = PBXGroup;
 			children = (
+				C47AD0651E5B2B6400D57777 /* Task.swift */,
 				C4C1575E1E5414A20098DA8D /* AppDelegate.swift */,
 				C4C651CA1E541C97006A028D /* RAMBounceAnimation.swift */,
+				C47AD05F1E5B251200D57777 /* ListViewController.swift */,
 				C4C157601E5414A20098DA8D /* ViewController.swift */,
 				C4C157621E5414A20098DA8D /* Main.storyboard */,
+				C445E4D71E5C2CA300795338 /* LoginViewController.swift */,
+				C47AD0611E5B252F00D57777 /* AddViewController.swift */,
+				C47AD0631E5B254A00D57777 /* SettingViewController.swift */,
 				C4C157651E5414A20098DA8D /* Assets.xcassets */,
 				C4C157671E5414A20098DA8D /* LaunchScreen.storyboard */,
+				C445E4D51E5C29F100795338 /* GoogleService-Info.plist */,
 				C4C1576A1E5414A20098DA8D /* Info.plist */,
 			);
 			path = Tweetask;
@@ -104,6 +122,7 @@
 				C4C157591E5414A20098DA8D /* Resources */,
 				C06CC80614CB24B60552D7DA /* [CP] Embed Pods Frameworks */,
 				9892368C2B570EFC6D773A0C /* [CP] Copy Pods Resources */,
+				C445E4D91E5C33F100795338 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -154,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C445E4D61E5C29F100795338 /* GoogleService-Info.plist in Resources */,
 				C4C157691E5414A20098DA8D /* LaunchScreen.storyboard in Resources */,
 				C4C157661E5414A20098DA8D /* Assets.xcassets in Resources */,
 				C4C157641E5414A20098DA8D /* Main.storyboard in Resources */,
@@ -208,6 +228,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tweetask/Pods-Tweetask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C445E4D91E5C33F100795338 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 6dfce1a28f14728ca30ea4ee6be6e9df13d01444 819d9521a6835de7c7f2ca5e14418830a7be7b9b2b6822cfdbc8a90b21a76329";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,9 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47AD0621E5B252F00D57777 /* AddViewController.swift in Sources */,
 				C4C651CB1E541C97006A028D /* RAMBounceAnimation.swift in Sources */,
 				C4C157611E5414A20098DA8D /* ViewController.swift in Sources */,
+				C47AD0601E5B251200D57777 /* ListViewController.swift in Sources */,
+				C445E4D81E5C2CA300795338 /* LoginViewController.swift in Sources */,
 				C4C1575F1E5414A20098DA8D /* AppDelegate.swift in Sources */,
+				C47AD0661E5B2B6400D57777 /* Task.swift in Sources */,
+				C47AD0641E5B254A00D57777 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
