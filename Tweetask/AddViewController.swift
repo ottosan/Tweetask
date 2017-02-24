@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import RAMAnimatedTabBarController
+import TwitterKit
 
 class AddViewController: UIViewController {
 
@@ -95,6 +96,24 @@ class AddViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func tweetButton(_ sender: Any) {
+//        // Swift
+//        let composer = TWTRComposer()
+//        
+//        composer.setText("tweet from swift")
+//        composer.setImage(UIImage(named: "fabric"))
+//        
+//        // Called from a UIViewController
+//        composer.show(from: self) { result in
+//            if (result == TWTRComposerResult.cancelled) {
+//                print("Tweet composition cancelled")
+//            }
+//            else {
+//                print("Sending tweet!")
+//            }
+//        }
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -23,39 +23,14 @@ class LoginViewController: UIViewController {
     }
     
     func setup(){
-//        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
-//            if (session != nil) {
-//                print("signed in as \(session?.userName)");
-//            } else {
-//                print("error: \(error?.localizedDescription)");
-//            }
-//        })
-//        logInButton.center = self.view.center
-//        self.view.addSubview(logInButton)
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
-            
-            if let session = session {
-                
-                let credential = FIRTwitterAuthProvider.credential(withToken: session.authToken,
-                                                                            secret: session.authTokenSecret)
-                
-                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-                    
-                    if let error = error {
-                        //TOOD: エラーハンドリング
-                        print(error)
-                        return
-                    }
-                    
-                    print("ようこそ! \(user?.displayName)")
-                }
-                
+            if (session != nil) {
+                print("signed in as \(session?.userName)");
             } else {
-                //TOOD: エラーハンドリング
+                print("error: \(error?.localizedDescription)");
             }
         })
-        
-        logInButton.center = view.center
+        logInButton.center = self.view.center
         self.view.addSubview(logInButton)
     }
     

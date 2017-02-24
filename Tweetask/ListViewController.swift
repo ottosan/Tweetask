@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 import Firebase   // 先頭でFirebaseをimportしておく
 import FirebaseAuth
+import TwitterKit
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -23,15 +24,21 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     // 以降内容をアップデートするとリスト内は自動的に更新される。
     let taskArray = try! Realm().objects(Task.self).sorted(byProperty: "date", ascending: false)
 
+    //let client = TWTRAPIClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if FIRAuth.auth()?.currentUser == nil {
-            // ログインしていなければログインの画面を表示する
-            // viewDidAppear内でpresent()を呼び出しても表示されないためメソッドが終了してから呼ばれるようにする
-            DispatchQueue.main.async {
-                let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-                self.present(loginViewController!, animated: true, completion: nil)
+        Twitter.sharedInstance().logIn { session, error in
+            if (session != nil) {
+                print("signed in as \(session?.userName)");
+            } else {
+                print("error: \(error?.localizedDescription)");
+                // ログインしていなければログインの画面を表示する
+                // viewDidAppear内でpresent()を呼び出しても表示されないためメソッドが終了してから呼ばれるようにする
+                DispatchQueue.main.async {
+                    let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+                    self.present(loginViewController!, animated: true, completion: nil)
+                }
             }
         }
 
